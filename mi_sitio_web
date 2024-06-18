@@ -1,0 +1,16 @@
+mi_sitio_web/
+│
+├── index.html
+├── galeria.html
+├── presupuesto.html
+├── contacto.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── main.js
+├── images/
+│   └── (aquí van las imágenes de la galería y otros recursos)
+├── external/
+│   └── noticias.json (o noticias.xml)
+└── plugins/
+    └── (cualquier plugin de JavaScript o jQuery que utilices)
