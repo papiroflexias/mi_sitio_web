@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Empresa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Mi Empresa</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div id="mapa"></div>
+            <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+            <p>Teléfono: 123-456-789</p>
+            <p>Email: contacto@miempresa.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>Dirección de la empresa | Aviso legal</p>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </footer>
+    <script>
+        function initMap() {
+            var ubicacion = {lat: -34.397, lng: 150.644};
+            var map = new google.maps.Map(document.getElementById('mapa'), {
+                zoom: 8,
+                center: ubicacion
+            });
+            var marker = new google.maps.Marker({
+                position: ubicacion,
+                map: map
+            });
+        }
+    </script>
+</body>
+</html>
